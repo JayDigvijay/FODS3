@@ -1,12 +1,12 @@
 import numpy as np 
-import scipy as sp 
+#import scipy as sp 
 import matplotlib.pyplot as plt 
 from scipy.special import gamma as G
 
 ## M = Number of Heads in Randomly Generated Sample. 
-k = 1.1
-a = 4 * k
-b = 6 * k
+k = 0.5
+a = 2 * k
+b = 3 * k
 u = 0
 N = 160
 M = np.random.randint(1,161)
