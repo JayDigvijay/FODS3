@@ -34,6 +34,7 @@ for i in range (101):
 	#print(Norm)
 print('%0.2f' %U_ML)
 
+fig = plt.figure()
 plt.plot(U, P)
 plt.ion()
 plt.xlabel('u')
@@ -41,3 +42,4 @@ plt.ylabel('P')
 plt.show()
 plt.pause(10)
 plt.close()
+fig.savefig('Final Graph.png')
