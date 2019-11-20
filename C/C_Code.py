@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 20 20:17:21 2019
+
+@author: Digvijay Singh
+"""
 import numpy as np 
 #import scipy as sp 
 import matplotlib.pyplot as plt 
@@ -9,9 +15,7 @@ a = 2 * k
 b = 3 * k
 u = 0
 N = 160
-M = np.random.randint(1,161)
-while(M >= 0.4*160 and M <= 0.6*160):
-	M = np.random.randint(1,161)
+M = 80
 L = N - M
 arr = np.array([0]*(N-M) + [1]*(M))	
 np.random.shuffle(arr)
@@ -43,3 +47,4 @@ plt.show()
 plt.pause(0.1)
 plt.close()
 fig.savefig('Final Graph.png')
+
